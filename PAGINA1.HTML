@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Chagas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        header, footer {
+            background-color: #17a2b8;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+        header .logo-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        header h1 {
+            flex: 1;
+            margin: 0 20px;
+            font-size: 1.8em;
+            color: white;
+        }
+        header img {
+            max-width: 100px;
+            height: auto;
+        }
+        nav {
+            background-color: #007bff;
+            text-align: center;
+            padding: 1em;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        .chart {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 400px;
+        }
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .center-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .accordion {
+            background-color: #17a2b8;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            font-size: 1.1em;
+        }
+        .accordion:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        .active:after {
+            content: "\2212";
+        }
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        .panel a {
+            display: block;
+            padding: 10px 0;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .panel a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+        <img src="descarga5.png" alt="Logo Izquierda">
+        <h1>Enfermedad de Chagas transmitida por el vector Triatoma infestans en Chuquisaca Bolivia</h1>
+        <img src="descarga.png" alt="Logo Derecha">
+    </div>
+  </header>
+
+  
+  <nav>
+    <button class="accordion">Índice</button>
+    <div class="panel">
+        <a href="#inicio">Inicio</a>
+        <a href="#Distribución espacial">Análisis de distribución espacial</a>
+        <a href="#Modelos de distribución de especies">Modelos de distribución de especies</a>
+        <a href="#vulnerabilidad">vulnerabilidad</a>
+        <a href="#graficos">Gráficos</a>
+        <a href="#mapa">Mapas</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="inicio" class="center-content">
+        <h2>Inicio</h2>
+      <p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+El Chagas es una enfermedad parasitaria endémica en América causada por el parásito Trypanosoma Cruzi transmitida por el vector Triatoma infestans (Vinchuca). Aunque la enfermedad se encuentra en toda América, tiene una mayor prevalencia en las regiones rurales de América Latina, esta fue descubierta y descrita en 1909 por el Dr. Carlos Ribeiro Justiniano Das Chagas (1879-1934), médico sanitarista que a principios de siglo se desempeñaba en el Instituto Bacteriológico de Manguinhos (hoy Instituto Oswaldo Cruz) de Río de Janeiro, Brasil.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Carlos_chagas_2.jpg/270px-Carlos_chagas_2.jpg" alt="Imagen de Carlos Chagas">
+         <p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+El principal transmisor de la enfermedad de Chagas en Chuquisaca, Bolivia, es un insecto conocido como vinchuca o chinche besucona (Triatoma infestans).</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Wg2qFPnp_yBMOC7odiFUixRPLE2u_7CGlA&s/600x300" alt="Imagen de vinchuca">
+<p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+Bolivia es uno de los países con mayor prevalencia de la enfermedad de Chagas en el mundo. Según datos de la Coalición Chagas (2021), más de 600.000 personas viven con la infección y se estima que hay una media anual de más de 8.000 nuevas infecciones por picadura del vector Triatoma infestans (Vinchuca), que es el insecto portador del parásito Trypanosoma cruzi. 
+  <img src="coalicion1.jpg" alt="Imagen de Carlos Chagas">
+</p>
+    </section>
+
+ <main>
+    <section id="Distribución espacial" class="center-content">
+        <h2>Distribución espacial</h2>
+  <p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+        La evidencia genética indica que Triatoma infestans, el vector de la enfermedad de Chagas se originó en la región de Cochabamba y Sucre en Bolivia, en esta área existen focos selváticos de esta especie que habitan entre rocas y en asociación con roedores. La caza y cría de estos roedores por parte de los humanos pudo haber facilitado la domesticación de este vector (T. infestans) hace aproximadamente 3000-4000 años (Dujardin, 1998).
+</p>
+  <p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+La forma doméstica de T. infestans se diseminó desde Bolivia en asociación con migraciones humanas. Una de las primeras dispersiones estuvo relacionada con los indios Chinchorro, que migraron hacia los valles del norte de Chile. En la región de Tarapacá, momias de hace aproximadamente 4000 años muestran signos de enfermedad de Chagas crónica, y se encuentra ADN del parásito en sus tejidos (Rothammer, Allison, Nunez, Staden, & Arriaza, 1999).
+</p>
+  <p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+Segun datos del GBIFF estos son los municipipos de donde se registra presencia del vector (T.I.)
+</p>
+        <img src="distribucion1.png" alt="Imagen de Carlos Chagas">
+  <p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+Estos son los municipipos de donde no se registra presencia del vector (T.I.)
+
+       
+</p>
+ <img src="distribucion2.png" alt="Imagen de Carlos Chagas">
+<main>
+    <section id="Modelos de distribución de especies" class="center-content">
+        <h2>Modelos de distribución de especies</h2>
+ <p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+      Para conocer la distribución espacial del vector T.I. se modela la distribución especies y se utiliza el modelo de máxima entropía en el modelo nuestras variables serán las variables ambientales. 
+
+</p>
+  <p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+        a continuación se presentan los siguientes modelos globales y regionales de temperatura y precipitacion
+</p>
+</p>
+  <p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+        Los modelos globales son útiles para entender patrones biogeográficos amplios y cómo los cambios climáticos globales pueden influir en la distribución de las especies.
+</p>
+<img src="mapa1.png" alt="Modelo 1 de distribución">
+<img src="mapa2.png" alt="Modelo 1 de distribución">
+<p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+        Los modelos regionales proporcionan una base sólida para el análisis regional y más específico de las variables ambientales. 
+</p>
+<img src="mapa3.png" alt="Modelo 1 de distribución">
+<img src="mapa4.png" alt="Modelo 1 de distribución">
+ <p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+       Este modelo ofrece una resolución mucho más detallada, lo que permitió observar variaciones finas en la distribución del vector a nivel local. Con esta resolución, es posible identificar microhábitats que podrían estar asociados con condiciones específicas positivas o negativas para la presencia del vector
+ <img src="modelo1.png" alt="Modelo 1 de distribución">
+</p>
+<p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+       El escenario SSP1-2.6 del modelo de cambio climático HadGEM3-GC31-LL predice un aumento mínimo de la temperatura global a alrededor de 1.5°C para 2040., con una reducción significativa en eventos extremos y perturbaciones ecológicas.
+ <img src="modelo1.png" alt="Modelo 1 de distribución">
+</p>
+<p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+       SSP5-8.5 es considerado el escenario más pesimista de cambio climático en el modelo HadGEM3-GC31-LL, el cual proyecta un aumento significativo de la temperatura global, superando los 3°C o incluso los 4°C para finales del año 2040. 
+ <img src="modelo1.png" alt="Modelo 1 de distribución">
+</p>
+ <p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+      los resultados  uestran que en el modelo actual las superficies afectadas son más elevadas en Sucre y Poroma. En el modelo desfavorable, aunque Sucre y Presto muestran un ligero cambio en la superficie afectada, áreas como Tomina y Mojocoya mantienen condiciones similares al escenario actual. Por otro lado, el modelo favorable revela una reducción general de la superficie afectada en todos los municipios, con la excepción de Presto y Mojocoya, que permanecen casi sin cambios.
+ <img src="tabla1.png" alt="Modelo 1 de distribución">
+</p>
+<p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+    Areas del departamento de Chuquisaca que son más propensas a la enfermedad de Chagas la superficie marcada de color rojo representa el área más propensa a contraer la enfermedad de Chagas y se puede observar detalles de la coloración en porcentajes en la leyenda de la imagen
+</p>
+
+ <p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+     El escenario SSP1-2.6 del modelo de cambio climático HadGEM3-GC31-LL predice un aumento mínimo de la temperatura global a alrededor de 1.5°C para 2040. Los impactos climáticos bajo este escenario son relativamente menores y más manejables, con una reducción significativa en eventos extremos y perturbaciones ecológicas.
+</p>
+ 
+ <p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+
+</p>
+ <img src="modelo4.png" alt="Modelo 1 de distribución">
+</p>
+ 
+    </section>
+
+
+    <section id="vulnerabilidad" class="center-content">
+        <h2>Mapas</h2>
+       <p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+acontinuación se muestra una serie de mapas que representan todo el analisis de la distribucion espacial del vector triatoma infestans
+</p>
+ <img src="mapas1.png" alt="Modelo 1 de distribución">
+ <img src="mapas2.png" alt="Modelo 1 de distribución">
+ 
+ <img src="mapas3.png" alt="Modelo 1 de distribución">
+  <img src="mapas4.png" alt="Modelo 1 de distribución">
+  <img src="mapas5.png" alt="Modelo 1 de distribución">
+  <img src="mapas6.png" alt="Modelo 1 de distribución">
+  <img src="mapas7.png" alt="Modelo 1 de distribución">
+ 
+ 
+ 
+ 
+
+
+        <p style="font-size: 22px; line-height: 1.6; text-align: justify;">
+
+
+
+   
+    </section>
+
+    <section id="contact" class="center-content">
+        <h2>Contacto</h2>
+        <p>Puedes contactarnos a través del siguiente <a href="mailto:pibanezc@est.emi.edu.bo">email</a>.</p>
+    </section>
+
+    <section id="graficos" class="center-content">
+        <h2>Gráficos</h2>
+        <div class="chart">
+            <canvas id="myChart"></canvas>
+        </div>
+    </section>
+
+    <section id="mapa" class="center-content">
+        <h2>Mapa</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509572!2d144.95565131531596!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727e4c0b0b1b37!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1615274994254!5m2!1sen!2sau" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer>
+      <p>&copy; 2024</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Rojo', 'Azul', 'Amarillo', 'Verde', 'Púrpura', 'Naranja'],
+            datasets: [{
+                label: '# de Votos',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    // Script para el índice expandible
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+  </script>
+</body>
+</html>
